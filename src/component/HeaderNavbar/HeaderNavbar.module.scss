@@ -1,0 +1,57 @@
+@import "../../style/variables.scss";
+
+.header {
+    width: 100%;
+    background-color: #fff;
+    height: 72px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .input {
+        margin-left: 35px;
+        label {
+            display: flex;
+            align-items: center;
+            input {
+                background: transparent;
+                border: none;
+                border-bottom: 1px solid $fiol;
+                height: 29px;
+                width: 285px;
+                padding: 0;
+                margin: 0;
+                font-size: 20px;
+                &:focus {
+                    outline: none;
+                }
+            }
+            svg {
+                padding-bottom: 4px;
+                border-bottom: 1px solid $fiol;
+            }
+        }
+    }
+    .wrapper_icon {
+        display: flex;
+        align-items: center;
+        margin-right: 24px;
+        .avatar {
+            width: 24px;
+            height: 24px;
+            border: 2px solid $fiol;
+            border-radius: 50%;
+            background: transparent;
+            font-size: 7px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            line-height: 1em;
+            margin-left: 16px;
+            cursor: pointer;
+        }
+        svg {
+            margin-left: 16px;
+            cursor: pointer;
+        }
+    }
+}
